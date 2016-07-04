@@ -42,7 +42,7 @@ Particle = class {
 Game = class {
     init = function(self)
         self.particles = {}
-        for i=0,1000 do
+        for i=0,500 do
             table.insert(self.particles, Particle(400, 300))
         end
     end;

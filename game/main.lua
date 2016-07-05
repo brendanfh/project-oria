@@ -1,11 +1,12 @@
 require "lib/mod"
 
 import {
-    Game = "src.game:"
+    Game = "src.game:";
 }
 
 local game = nil
 function love.load()
+    math.randomseed(love.timer.getTime())
     game = Game()
 end
 

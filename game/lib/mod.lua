@@ -154,10 +154,9 @@ function class(obj)
             for k, v in pairs(cls) do
                 if k:sub(0, 2) == "__" then
                     mt[k] = v
-                else
-                    o[k] = v
                 end
             end
+            mt.__index = cls
             o = setmetatable(o, mt)
             if cls.init then
                 cls.init(o, ...)

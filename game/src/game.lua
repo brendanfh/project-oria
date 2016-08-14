@@ -10,7 +10,7 @@ Game = class {
 
     draw = function(self)
         love.graphics.setBackgroundColor(255, 0, 0)
-    end;
+    end
 }
 
 return module { Game }
